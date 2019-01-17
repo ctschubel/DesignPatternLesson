@@ -30,11 +30,11 @@ Prinzipien guter Programmierung.
 - Immer gegen Interfaces programmieren!
 - Obere ebenen sollen so wenig wie möglich von unterklassen wissen, nur das sie die Schnittstellen erfüllen.
 
-### Erzeugungsmuster (Creation-Patterns)
+## Erzeugungsmuster (Creation-Patterns)
 - Nach den Erzeugungsmustern sollen Objekte nicht im Code erzeugt werden, sondern bei Bedarf eine Erzeugerklasse für der Erzeugung des Objekts genutzt werden.
 	- Dadurch muss der Client keine Informationen darüber haben wie ein Objekt wirklich erzeugt wird, dies muss nur die Erzeugerklasse wissen.
 
-## Builder Pattern
+### Builder Pattern
 - Ermöglicht es ein Objekt nach und nach aufzubauen.
 - Wann sollte das Builder Pattern genutzt werden?
 	- Erzeugung eines Objektes ist sehr Komplex und benötigt beispielsweise viele andere Objekte die auch ersteinmal erzeugt werden müssen.
