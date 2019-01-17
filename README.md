@@ -30,3 +30,18 @@ Prinzipien guter Programmierung.
 - Immer gegen Interfaces programmieren!
 - Obere ebenen sollen so wenig wie möglich von unterklassen wissen, nur das sie die Schnittstellen erfüllen.
 
+### Erzeugungsmuster (Creation-Patterns)
+- Nach den Erzeugungsmustern sollen Objekte nicht im Code erzeugt werden, sondern bei Bedarf eine Erzeugerklasse für der Erzeugung des Objekts genutzt werden.
+	- Dadurch muss der Client keine Informationen darüber haben wie ein Objekt wirklich erzeugt wird, dies muss nur die Erzeugerklasse wissen.
+
+## Builder Pattern
+- Ermöglicht es ein Objekt nach und nach aufzubauen.
+- Wann sollte das Builder Pattern genutzt werden?
+	- Erzeugung eines Objektes ist sehr Komplex und benötigt beispielsweise viele andere Objekte die auch ersteinmal erzeugt werden müssen.
+	- Wenn Objekte, die aus verschiedenen Objekten zusammengesetzt werden, in mehreren Variationen vorkommen. Inikator--> Überlagerte Konstruktoren.
+	- Wenn die Applikation etwas von einem Format in ein anderes Format convertieren muss.
+- Vorteile Builder Pattern:
+	- Isolation der Implementation von Konstruktion und Repräsentation des Objektes.
+	- Einfaches Ergänzen neuer Repräsentation möglich. -> neue Concrete Builder definieren.
+	- Verringert Parameter im Konstruktor von objekten. (Es muss nicht mehr `null` bei optionalen Parametern mitgegeben werden)
+	- Objekte aus mehreren Teilen werden immer ganzheitlich initialisiert.
