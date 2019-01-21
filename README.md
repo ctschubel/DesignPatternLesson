@@ -45,3 +45,16 @@ Prinzipien guter Programmierung.
 	- Einfaches Ergänzen neuer Repräsentation möglich. -> neue Concrete Builder definieren.
 	- Verringert Parameter im Konstruktor von objekten. (Es muss nicht mehr `null` bei optionalen Parametern mitgegeben werden)
 	- Objekte aus mehreren Teilen werden immer ganzheitlich initialisiert.
+	
+### Factory Method Pattern
+- Immer dann Anwendbar wenn Objekte von Klassen erst zu Laufzeit erzeugt werden sollen.
+	- Bei der Programmierung ist noch __nicht__ bekannt welches Objekt zur Laufzeit benötigt wird.
+- Hilft dem Programmierer das __Open-Closed Principle__ einzuhalten, also den Code erweiterbar zu halten!
+	- Es können immer neue Implementationen der abstrakten Factory hinzugefügt werden.
+- Vorteile Factory Method Pattern
+	- Erweiterbarkeit
+	- Wiederverwendbarkeit, es wird nur gegen Schnittstelle Programmiert.
+- Nachteile Factory Method Pattern
+	- Komplexität durch mehr Vererbungsebenen.
+	
+	
