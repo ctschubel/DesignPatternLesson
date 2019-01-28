@@ -62,5 +62,12 @@ Prinzipien guter Programmierung.
 - Zwei Klassen die geimeinsam verwendet werden müssen werden von der gleichen Factory erzeugt.
 - Client ist komplett von fachlicher Logik entkoppelt.
 - Nachteil--> Erweiterbarkeit, sollte eine Produktfamilie erweitert werden müssen entsteht hoher Änderungsaufwand.
+
+### Singleton Pattern
+- Es soll nur eine Instanz einer Klasse Erzeugt werden!
+- Will man ein Objekt einer Klasse initialisieren ruft man getInstance() auf, diese erzeugt entweder ein neues Objekt oder gibt ein bereits erzeugtes Objekt der klasse zurück.
+- getInstance() globaler zugriffspunkt für ein Objekt.
+- 
+
 	
 	
