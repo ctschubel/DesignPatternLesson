@@ -38,7 +38,7 @@ Prinzipien guter Programmierung.
 - Ermöglicht es ein Objekt nach und nach aufzubauen.
 - Wann sollte das Builder Pattern genutzt werden?
 	- Erzeugung eines Objektes ist sehr Komplex und benötigt beispielsweise viele andere Objekte die auch ersteinmal erzeugt werden müssen.
-	- Wenn Objekte, die aus verschiedenen Objekten zusammengesetzt werden, in mehreren Variationen vorkommen. Inikator--> Überlagerte Konstruktoren.
+	- Wenn Objekte, die aus verschiedenen Objekten zusammengesetzt werden, in mehreren Variationen vorkommen. Indikator--> Überlagerte Konstruktoren.
 	- Wenn die Applikation etwas von einem Format in ein anderes Format convertieren muss.
 - Vorteile Builder Pattern:
 	- Isolation der Implementation von Konstruktion und Repräsentation des Objektes.
@@ -56,5 +56,11 @@ Prinzipien guter Programmierung.
 	- Wiederverwendbarkeit, es wird nur gegen Schnittstelle Programmiert.
 - Nachteile Factory Method Pattern
 	- Komplexität durch mehr Vererbungsebenen.
+	
+### Abstract Factory Pattern
+- Wie bei Factory Pattern jedoch wird eine ganze Produktfamilie erzeugt und kein einzeles Objekt.
+- Zwei Klassen die geimeinsam verwendet werden müssen werden von der gleichen Factory erzeugt.
+- Client ist komplett von fachlicher Logik entkoppelt.
+- Nachteil--> Erweiterbarkeit, sollte eine Produktfamilie erweitert werden müssen entsteht hoher Änderungsaufwand.
 	
 	
